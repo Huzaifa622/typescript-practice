@@ -82,10 +82,58 @@
 
 // const input = document.querySelector('input')!
 // console.log(input.value.length);
+
+// Task 1 ---------------------------------------------------
+
 // const form = document.querySelector('form')!
 // const input = document.querySelector('input')!
+// const div = document.querySelector('div')!
 // form.onsubmit=(e)=>{
 //     e.preventDefault()
-//     console.log(input.value)
+//     let value = Number(input.value);
+//     div.innerHTML =`<h1>${value+20}</h1>`
+    
 // }
+
+// generic ---------------------------------------------------
+
+// const add = <T>(a:T) =>{
+//    return a;
+// }
+
+// const no = add(1)
+// const strno = add("1")
+// no.valueOf();
+// strno.charAt;
+
+//in this generic T checks the type of arguments and store it in itself now the question is why we wont use any becouse in genenric we can easily apply methods like valueOf which is number method if we apply any in type javascript wont able to get methods because he dont know the type 
+
+// type Persons ={
+//     name: string,
+//     age: number
+// }
+
+// const users :Persons[] =[ 
+//     {
+//         name: 'huz', age: 28,
+//     },
+//     {
+//         name: 'az', age: 26,
+//     },
+//     {
+//         name: 'quz', age: 23,
+//     },
+//     {
+//         name: 'fuz', age: 21,
+//     },
+// ]
+
+
+// const filter =<T , U extends keyof T> (arr :T[] , property:U , value: T[U])=>{
+
+//     return arr.filter(items=>items[property] == value);
+// }
+
+// const filterByName = filter(users , 'name' , 'az')
+// console.log(filterByName)
 
